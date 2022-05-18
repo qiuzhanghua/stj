@@ -1,4 +1,5 @@
 <script>
+  import '../styles.css'
 import Toggle from "../lib/Toggle.svelte";
 import Button from "../lib/Button.svelte";
 import Input from "../lib/Input.svelte";
@@ -17,5 +18,5 @@ import Input from "../lib/Input.svelte";
 
 <Input label="Input" bind:value={value} placeholder='Input your name' ></Input>
 
-<Button label='Primary Button' primary size='small' on:click={onButton} ></Button>
+<Button label='Primary Button' size='large' on:click={onButton}></Button>
 

@@ -1,4 +1,5 @@
 <script>
+  import '../styles.css'
   import { createEventDispatcher } from 'svelte';
 
   export let primary = false;
@@ -26,67 +27,53 @@
 <style>
 .stj-button {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    border: 0;
-    border-radius: 3px;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1;
+    @apply font-normal border-0 rounded-lg cursor-pointer inline-block leading-none;
 }
+    
 .stj-button--primary {
-    color: #1b116e;
-    background-color: #6bedb5;
+    @apply text-[#1b116e] bg-[#6bedb5];
 }
+
 .stj-button--secondary {
-    color: #ffffff;
-    background-color: #1b116e;
+    @apply text-[#fff] bg-[#1b116e] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)_inset];
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
+
 .stj-button--small {
-    font-size: 12px;
-    padding: 10px 16px;
+    @apply text-xs px-2.5 py-4;
 }
+
 .stj-button--medium {
-    font-size: 14px;
-    padding: 11px 20px;
+    @apply text-sm px-[11px] py-5;
 }
+
 .stj-button--large {
-    font-size: 16px;
-    padding: 12px 24px;
+    @apply text-base px-3 py-6;
 }
 
 .stj-button--primary :hover {
-    color: #1b116e;
-    background-color: #55bd90;
+    @apply text-[#1b116e] bg-[#55bd90];
 }
 
 .stj-button--primary :active {
-    color: #1b116e;
-    background-color: #55bd90;
-    border: solid 2px #1b116e;
+    @apply text-[#1b116e] bg-[#55bd90] border-solid border-2 border-[#1b116e];
 }
 
 .stj-button--primary :disabled {
-    color: #1b116e;
-    opacity: 0.5;
-    background-color: #6bedb5;
+    @apply text-[#1b116e]/0.5 bg-[#6bedb5];
 }
 
 .stj-button--secondary :hover {
-    color: #1b116e;
-    background-color: #55bd90;
+    @apply text-[#1b116e] bg-[#55bd90];
 }
 
 .stj-button--secondary :active {
-    color: #1b116e;
-    background-color: #6bedb5;
-    border: solid 2px #1b116e;
+    @apply text-[#1b116e] bg-[#55bd90] border-solid border-2 border-[#1b116e];
+
 }
 
 .stj-button--secondary :disabled {
-    color: #ffffff;
-    opacity: 0.5;
-    background-color: #1b116e;
+    @apply text-white bg-[#1b116e]/0.5;
 }
 
 </style>
