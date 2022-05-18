@@ -50,28 +50,28 @@
     @apply text-base px-3 py-6;
 }
 
-.stj-button--primary :hover {
+.stj-button--primary:hover {
     @apply text-[#1b116e] bg-[#55bd90];
 }
 
-.stj-button--primary :active {
+.stj-button--primary:active {
     @apply text-[#1b116e] bg-[#55bd90] border-solid border-2 border-[#1b116e];
 }
 
-.stj-button--primary :disabled {
+.stj-button--primary:disabled {
     @apply text-[#1b116e]/0.5 bg-[#6bedb5];
 }
 
-.stj-button--secondary :hover {
+.stj-button--secondary:hover {
     @apply text-[#1b116e] bg-[#55bd90];
 }
 
-.stj-button--secondary :active {
+.stj-button--secondary:active {
     @apply text-[#1b116e] bg-[#55bd90] border-solid border-2 border-[#1b116e];
 
 }
 
-.stj-button--secondary :disabled {
+.stj-button--secondary:disabled {
     @apply text-white bg-[#1b116e]/0.5;
 }
 
