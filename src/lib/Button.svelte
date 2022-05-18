@@ -1,5 +1,4 @@
 <script>
-  import '../styles.css'
   import { createEventDispatcher } from 'svelte';
 
   export let primary = false;
